@@ -27,7 +27,6 @@ public class Main {
                     if(myObj.renameTo(new File("C:\\Users\\kocik\\OneDrive\\Dokumenty\\Programowanie\\Java\\Small project\\HOME\\filename.xml")))
                         System.out.println("File moved to HOME successfully");
 
-                else {
                     if (returnHours % 2 == 0) {
                         if (myObj.renameTo(new File("C:\\Users\\kocik\\OneDrive\\Dokumenty\\Programowanie\\Java\\Small project\\DEV\\filename.jar"))) {
                             System.out.println("File moved DEV successfully");
@@ -42,7 +41,6 @@ public class Main {
                             System.out.println("Failed to move the file");
                         }
                     }
-                }
 
             } else {
                 System.out.println("File already exists.");
