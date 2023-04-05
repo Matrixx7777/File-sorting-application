@@ -25,13 +25,11 @@ public class Main {
                         System.out.println("File moved to to the HOME successfully");
                     else if(myObj.exists())
                         System.out.println("The same file exists already in the HOME folder -- > " + myObj.delete());
-                }
-                else if (createFile && returnHours % 2 == 0 && filename.contains(".jar")) {
+                } else if (createFile && returnHours % 2 == 0 && filename.contains(".jar")) {
                     if (myObj.renameTo(new File("C:\\Users\\kocik\\OneDrive\\Dokumenty\\Programowanie\\Java\\Small project\\DEV\\" + myObj)))
                         System.out.println("File moved to the DEV successfully");
                     else if(myObj.exists())
                         System.out.println("The same file exists already in the DEV folder -- > " + myObj.delete());
-
                 } else if(createFile && returnHours % 2 != 0 && filename.contains(".jar")) {
                     if(myObj.renameTo(new File("C:\\Users\\kocik\\OneDrive\\Dokumenty\\Programowanie\\Java\\Small project\\TEST\\" + myObj)))
                         System.out.println("File moved to the TEST successfully");
