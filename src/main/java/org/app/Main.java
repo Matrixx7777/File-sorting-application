@@ -15,7 +15,6 @@ public class Main {
     public static void getCreatedFile(File file) {
         Path path = Paths.get(file.getPath());
         BasicFileAttributes attr;
-
         try {
             boolean createFile = file.createNewFile();
             attr = Files.readAttributes(path, BasicFileAttributes.class);
